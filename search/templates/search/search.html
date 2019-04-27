@@ -1,0 +1,17 @@
+<form method="get">
+
+    <input id="q" name="q" type="text" placeholder="Поиск..." >
+
+</form>
+
+{% for item in products %}
+
+    {{ item.title }}
+    {{ item.slug }}
+    {{ item.description }}
+    {{ item.image }}
+
+
+    <br>
+
+{% endfor %}
